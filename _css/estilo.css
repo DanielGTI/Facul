@@ -1,0 +1,401 @@
+﻿@charset "UTF-8"; @import url(http://fonts.googleapis.com/css?family=Titillium+Web); @font-face {
+    font-family: 'FonteLogo';
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> }
+
+body {
+    background-color: #dddddd;
+    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div#interface {
+    width: 95%;
+    background-image: linear-gradient(#ffffff,#fff, #fff, #5e97ff00,#7f92b5c7);
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px;
+    border: 1px solid #0505ff4f;
+    border-radius: 15px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 0px;
+    font-size: 17px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    width: 12%;
+    top: 12%;
+}
+
+header#cabecalho {
+    border-bottom: 1px #1112152b solid;
+    height: 150px;
+    background: url(../_imagens/fullbanner) no-repeat 0px 80px;
+}
+
+header#cabecalho h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30pt;
+    color: #2752a2;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+
+header#cabecalho h2 {
+    font-family: 'montserrat ', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+/* Formatação de imagens com legendas */
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    width: 35%;
+    height: auto;
+    float: right;
+    margin: 7%;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    right: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+    max-width: 500px;
+    max-height: 500px;
+    cursor: pointer;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/* Formatação do menu */
+nav#meu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #2450a1fc;
+    padding: 10px;
+    margin: 2px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #0849bfbd;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-style: italic;
+}
+
+nav#menu a:hover {
+    color: #ffffff;
+}
+
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #60606063;
+    padding-right: 15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #000000;
+    background-color: #8e8e98f0;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'monteserrat', sans-serif;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+.direita {
+    text-align: right;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    color: #606060;
+}
+
+table#tabelaspec {
+    border: 1px solid #03309638;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+}
+
+table#tabeleaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral {
+    width: 50%;
+    max-width: 720px;
+    float: right;
+    background-color: #d6e0f226;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 3%;
+    border: 1px solid #00000021;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#lateral h1 {
+    font-family: 'monteserrat', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    background-color: #95959e;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+footer#rodape {
+    display: flex;
+    clear: both;
+    border-top: 1px solid #606060;
+    justify-content: center;
+    padding: 14px;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+footer#rodape a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    margin: 10px;
+    margin-top: 0;
+}
+
+footer#rodape a:hover {
+    color: blue;
+}
+
+.row-menu-flut {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-home {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div#video iframe {
+    width: 99%;
+    height: 100%;
+    min-height: 350px;
+}
+
+p.deposito {
+    text-align: center;
+}
+
+caption {
+    font-weight: 600;
+}
+
+.video iframe {
+    border: 13px solid #a2adc3;
+    position: relative;
+    top: 59px;
+    left: 6%;
+    width: 50%;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    header#cabecalho h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: #2752a2;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+        padding: 0px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+        margin-top: 15%;
+    }
+
+    header#cabecalho img#icone {
+        display: none;
+    }
+    
+    p.deposito {
+    text-align: center;
+    font-size: 12px;
+    margin-right: 17%;
+}
+
+p {
+    text-align: justify;
+    text-indent: 0px;
+    font-size: 16px;
+    width: 86%;
+}
+
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    width: 30%;
+    height: auto;
+    float: right;
+    margin: 9%;
+    left: -27px;
+}
+
+table#tabelaspec {
+    border: 1px solid #03309638;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    width: 70%;
+    margin-left:10px;
+}
+
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #000000;
+    background-color: #8e8e98f0;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+    width:80%
+    }
+    
+  aside#lateral h2 {
+    background-color: #95959e;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+div#video iframe {
+    height: 60%;
+    padding: 10px;
+    width: 59%;
+    margin-left: 40%;
+    max-width: 700px;
+}
+
+
+
+footer#rodape {
+    display: flex;
+    clear: both;
+    border-top: 1px solid #606060;
+    justify-content: center;
+    padding: 14px;
+}
+
+
+body,html {
+        overflow-x: hidden !important;
+    }
+}
